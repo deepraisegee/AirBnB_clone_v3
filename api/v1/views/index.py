@@ -3,9 +3,17 @@
 
 from flask import jsonify
 from api.v1.views import app_views
+import models
 
 
 @app_views.route("/status", methods=["GET"])
 def status():
     """send status respose"""
     return jsonify({"status": "OK"})
+
+@app_views.route("/stats")
+def stats():
+    """retrieves the number of each objects by type"""
+    return jsonify({
+                "amenities": ...
+            })
