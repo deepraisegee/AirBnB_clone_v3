@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Flask Application"""
+"""Flask Application base module"""
 
 import os
 
